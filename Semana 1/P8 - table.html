@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<style>
+		table, td,th{
+			border: 1px solid red;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<!--Table sirve para dar inicio a una tabla-->
+	<table>
+		<!--Caption sirve para poner el titulo a dicha tabla-->
+		<caption>
+			Usuarios de DevMaster
+		</caption>
+		<!--Thead especifica que el contenido es de una fila de encabezados-->
+		<thead>
+			<!--Tr da inicio a una fila-->
+			<tr>
+				<!--Th da inicio a una celda de encabezado-->
+				<th>Nombre</th>
+				<th>Edad</th>
+			</tr>
+		</thead>
+		<!--Tfoot da inicio a una celda de pie de tabla, se coloca antes que el tbody por buenas practicas, el navegador lo leera de todas maneras como pie de tabla y lo pondrá al final de esta-->
+		<tfoot>
+			<tr>
+				<!--Td da inicio a una celda-->
+				<td colspan="2">alumnos</td>
+			</tr>
+		</tfoot>
+
+		<!--Tbody especifica que se esta empezando con el cuerpo de la tabla-->
+		<tbody>
+			<tr>
+				<td>Pablo</td>
+				<td rowspan="2">25 años</td>
+			</tr>
+			<tr>
+				<td>Mario</td>
+				
+			</tr>
+			<tr>
+				<td>Juan</td>
+				<td>20 años</td>
+			</tr>
+		</tbody>
+		
+	</table>
+</body>
+</html>
